@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Bhaiya 💗</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg, #ffe5ed, #fff7f9);
+    }
+
+    .card {
+      width: 90%;
+      max-width: 400px;
+      padding: 30px 22px;
+      text-align: center;
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 15px 40px rgba(150, 80, 100, 0.18);
+    }
+
+    .rakhi {
+      font-size: 45px;
+    }
+
+    h1 {
+      color: #a04460;
+      font-size: 27px;
+      margin: 15px 0 25px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 18px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      border: none;
+      padding: 13px 24px;
+      border-radius: 30px;
+      background: #d96b89;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    #surprise {
+      display: none;
+      margin-top: 25px;
+    }
+
+    .message {
+      font-size: 23px;
+      color: #a04460;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="rakhi">🎀</div>
+
+    <h1>A little surprise for Bhaiya 💗</h1>
+
+    <button onclick="openCard()">Open Your Card 💌</button>
+
+    <div id="surprise">
+
+      <img src="photo.jpg" alt="Our photo">
+
+      <div class="message">
+        Happy Raksha Bandhan, Bhaiya! 🩷
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function openCard() {
+      document.getElementById("surprise").style.display = "block";
+      document.querySelector("button").style.display = "none";
+      document.querySelector("h1").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
